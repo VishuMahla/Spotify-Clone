@@ -1,0 +1,16 @@
+.flex{
+    display: flex;
+}
+.border{
+    border: 2px solid red;
+    margin: 3px;
+}
+.justify{
+    justify-content: center;
+}
+.items{
+    align-items: center;
+}
+.invert{
+    filter:invert(1);
+}
