@@ -21,6 +21,7 @@ body{
     position: inherit;
     position: fixed;
     background-color: black;
+    z-index: 22;
 }
 .logo img{
     height: 60px;
@@ -109,6 +110,7 @@ body{
     color: black;
     padding: 4px 16px 4px 16px;
     font-size: 18px;
+    margin-right: 20px;
 
 }
 #move{
@@ -123,12 +125,13 @@ body{
 
 
 .sidebar{
-    width: 22vw;
+    width: 30vw;
     background-color: #121212;
     display: flex;
     margin: 5px;
     flex-wrap: wrap;
     border-radius: 0.8rem;
+    height: 80vh;
 }
 
 .sidebar .yourlib {
@@ -138,6 +141,11 @@ body{
     justify-content: space-between;
     height: 80px;
     font-size: 10px;
+}
+.sidebar .yourlib h1{
+    font-weight: 650;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 .sidebar i {
     font-size: 20px;
@@ -150,24 +158,172 @@ body{
     margin-bottom: 8px;
     font-size: 20px;
     font-weight: 800;
+    border-radius: 15px;
+}
+
+.playlist .inner-playlist{
+    margin-top: 20px;
+    margin-left: 14px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.playlist .easy{
+    margin-left: 14px;
+    font-size: 1rem;
+    padding-bottom: 10px;
+}
+.playlist button{
+    background-color: white;
+    border-radius: 1.4rem;
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    height: 50px;
+    width: 170px;
+}
+
+.playlist button span {
+    font-size: 1rem;
+    padding: 5px;
+    font-weight: 700;
+    align-content: center;
+    margin-left: 14px;
+}
+
+.sidebar-footer{
+    margin-top: 80px;
+}
+.holder{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-left: 20px;
+
+}
+.same{
+    color:rgb(179,179,179);
+    font-size: small;
+    margin-left: 10px;
+}
+
+.lang{
+    background-color: black;
+    color: rgb(227, 194, 194);
+    margin-left: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100px;
+    height: 40px;
 }
 
 
 
 
 
+.main{
+    width: 70vw;
+    background-color: rgba(179,179,179,0.3);
+    border-radius: 0.8rem;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main .lil-head{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.main .lil-head h1{
+    padding-left:25px;
+    padding-top:20px;
+    font-weight: 700;
+    font-size: 25px;
+}
+.main .lil-head div{
+    padding-top: 30px;
+    padding-right: 20px;
+}
 
 
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 12px;
+    padding-left: 10px;
+    gap: 10px;
+}
 
 
+.card{
+    width: 210px;
+    border-radius:30px;
+    height: 280px;
+    position: relative;
+}
+.card img {
+    width: 100%;
+    height:70%;
+    object-fit: contain;
+    border-radius: 30px;
+}
+.card h2{
+    font-size: 16px;
+    padding-left: 15px;
+    padding-top: 3px;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+.card p{
+    font-size: 14px;
+    color: rgb(179,179,179);
+    padding-left:15px ;
+    flex-wrap: wrap;
+}
+.card i{
+    position: absolute;
+    right:40px;
+    bottom: 120px;
+    scale: 1.4;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+.card:hover i{
+        opacity: 1;
+}
 
+.playbar{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: black;
+    z-index: 223;
+    height: 6rem;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.playbar .img{
+    align-content: center;
+}
 
+.playbar .artist{
+    align-content: center;
+    padding-left: 10px;
+}
 
-
-
-
-
-.right{
-    width: 78vw;
-    background-color: #1f1f1f;
+.artist h4{
+    padding-bottom: 5px;
+}
+.artist p{
+    color:rgb(179,179,179)
 }
